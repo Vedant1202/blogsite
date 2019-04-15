@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="../css/libs/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/myblogs.css">
+    <script src="../js/libs/jquery.min.js" charset="utf-8"></script>
+    <script src="../js/libs/mustache.js" charset="utf-8"></script>
+    <script src="../js/libs/moment.js" charset="utf-8"></script>
+    <script src="../js/util.js" charset="utf-8"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+        if (checkData('user')) {
+
+        } else {
+          location.assign("E:/python_projects/frontend/views/index.html");
+        }
+
+      });
+    </script>
+
+
+
+    <div class="nav-right visible-xs">
+      <div class="button" id="btn">
+        <div class="bar top"></div>
+        <div class="bar middle"></div>
+        <div class="bar bottom"></div>
+      </div>
+    </div>
+    <!-- nav-right -->
+    <main>
+
+      <div class=".maindiv" id="maindiv">
+
+
+              <nav>
+                <div class="nav-right hidden-xs">
+                  <div class="button" id="btn">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+                  </div>
+                </div>
+              </nav>
+              <!-- nav-right -->
+
+              <div id="noblogs" style="color: grey; text-align: center; display: none">
+                <h1 style="color: white">No blogs to show</h1>
+              </div>
+
+
+
+      </div>
+
+
+
+    </main>
+
+    <div class="sidebar">
+      <ul class="sidebar-list">
+        <li> <div id="titleNav">Blog Site</div> </li><br><hr style="width: 80%;"><br><br><br>
+        <li id="writeblog" class="sidebar-item"><i class="fa fa-home fa-2x" style="margin-right: 8px; color: white"></i><a href="./home.html" class="sidebar-anchor">Home</a></li><br><br><br><br>
+      </ul>
+    </div>
+
+
+
+    <script id="blog-template" type="text/template">
+      <div class="card">
+        <div class="right">
+          <h1>{{ title }}</h1>
+          <div class="author">
+            <h2><i style="color: grey !important; font-size: 10px !important; font-weight: 0px !important; padding-right: 5px;">Author: </i> {{ username }} </h2>
+          </div>
+          <div class="separator"></div>
+          <p align="left" style="text-align: left !important;">
+            <div style="text-align: left !important; font-size: 22px !important;">
+              {{{text}}}
+            </div>
+          </p>
+        </div>
+        <h5> {{ date }} </h5>
+        <h6 style="margin-left: 60px;"> {{ month }} </h6>
+        <ul style="text-align: right">
+          <li><i class="fa fa-clock-o fa-2x"></i> <span style="padding-left: 15px !important; font-size: 20px !important;">{{ timespan }}</span> </li>
+        </ul>
+      </div>
+    </script>
+
+
+
+
+    <script src="../js/myblogs.js" charset="utf-8"></script>
+
+
+  </body>
+</html>

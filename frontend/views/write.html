@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="../css/libs/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/write.css">
+    <script src="../js/libs/jquery.min.js" charset="utf-8"></script>
+    <script src="../js/libs/mustache.js" charset="utf-8"></script>
+    <script src="../js/libs/moment.js" charset="utf-8"></script>
+    <script src="../ckeditor/ckeditor.js"></script>
+    <script src="../js/util.js" charset="utf-8"></script>
+
+
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+        if (checkData('user')) {
+
+        } else {
+          location.assign("E:/python_projects/frontend/views/index.html");
+        }
+
+      });
+    </script>
+
+
+
+    <div class="nav-right visible-xs">
+      <div class="button" id="btn">
+        <div class="bar top"></div>
+        <div class="bar middle"></div>
+        <div class="bar bottom"></div>
+      </div>
+    </div>
+    <!-- nav-right -->
+    <main>
+
+      <div class=".maindiv" id="maindiv">
+
+
+              <nav>
+                <div class="nav-right hidden-xs">
+                  <div class="button" id="btn">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+                  </div>
+                </div>
+              </nav>
+              <!-- nav-right -->
+
+              <!-- <h1>Hello</h1> -->
+
+              <div class="container" style="background-color: white !important; margin-left: 13%; margin-top: 5%;">
+                <div class="col-3 input-effect">
+                  <input id="title" class="effect-17" type="text" placeholder="">
+                  <label style="color: white !important; font-size: 24px;">Title</label>
+                  <span class="focus-border"></span>
+                </div>
+              </div>
+
+
+              <div style="width: 70%; margin-left: 15%; margin-top: 15%;" align="center">
+
+
+
+                <textarea name="editor1" id="editor1" rows="100" cols="50">
+                    This is my textarea to be replaced with CKEditor.
+                </textarea>
+
+              </div>
+              <div class="container">
+                <button class="submit" id="submit"><span>Submit</span></button>
+              </div>
+
+              <script>
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace( 'editor1');
+
+
+              </script>
+
+
+
+      </div>
+
+
+
+    </main>
+
+    <div class="sidebar">
+      <ul class="sidebar-list">
+        <li> <div id="titleNav">Blog Site</div> </li><br><hr style="width: 80%;"><br><br><br>
+        <li id="writeblog" class="sidebar-item"><i class="fa fa-home fa-2x" style="margin-right: 8px; color: white"></i><a href="./home.html" class="sidebar-anchor">Home</a></li><br><br><br><br>
+        <!-- <li id="myblogs" class="sidebar-item"><i class="fa fa-book fa-2x" style="margin-right: 8px; color: white"></i><a href="#" class="sidebar-anchor">My Blogs</a></li><br><br><br><br> -->
+        <!-- <li id="logout" class="sidebar-item"><i class="fa fa-sign-out fa-2x" style="margin-right: 8px; color: white"></i><a href="#" class="sidebar-anchor">Logout</a></li><br><br><br><br> -->
+        <!-- <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 3</a></li><br><br><br><br> -->
+        <!-- <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 4</a></li> -->
+      </ul>
+    </div>
+
+
+
+
+
+    <script src="../js/write.js" charset="utf-8"></script>
+
+  </body>
+</html>
