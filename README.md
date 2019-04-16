@@ -1,17 +1,15 @@
 # Blog site
 
-A simple blog site made with Django.
+A simple blog site made with Flask.
 
 ### File organisation
 
-The list of folders with files that should be contained in:
-
 <ul>
  	<li>
- 		<b>backend/</b>: Django API
+ 		<b>backend/</b>: Flask API
  	</li>
 	<li>
- 		<b>frontend/</b>: HTML files 
+ 		<b>frontend/</b>: HTML files
 	</li>
 	<li>
 		<b>frontend/css/</b>: CSS files
