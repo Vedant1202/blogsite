@@ -9,9 +9,9 @@ A simple blog site made with Flask.
  		<b>backend/</b>: Flask API
  	</li>
 	<li>
- 		<b>frontend/</b>: HTML files
+ 		<b>frontend/views</b>: HTML files
 	</li>
-	<li>
+  <li>
 		<b>frontend/css/</b>: CSS files
 	</li>
 	<li>
