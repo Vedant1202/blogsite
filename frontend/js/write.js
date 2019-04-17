@@ -16,8 +16,24 @@ $(document).ready(function() {
     }
   });
 
+  CKEDITOR.instances.editor1.setData("");
+
 });
 
+
+$('#submit').hover(function () {
+
+  if ($('#title').val().trim() == "" && CKEDITOR.instances.editor1.getData().trim() == "") {
+    // $('#submit').prop('disabled', true);
+    $('#submit').removeClass('submit');
+    console.log('hover true');
+  } else {
+    $('#submit').addClass('submit');
+        // $('#submit').prop('disabled', false);
+    console.log('hover false');
+  }
+
+});
 
 
 $('#submit').click(function () {
