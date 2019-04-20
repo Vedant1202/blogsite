@@ -36,7 +36,7 @@ or (on linux)
 python3 --version               
 ```
 Supported versions are python 3.6 and python 3.7
-<br>
+<br> 
 <br>
 
 
